@@ -1,0 +1,31 @@
+
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000" # Expose Flask app port
+    networks:
+      - app-network
+    volumes:
+      - ./backend:/app # Mount for development, optional for production
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "8501:8501" # Expose Streamlit app port
+    networks:
+      - app-network
+    depends_on:
+      - backend # Ensure backend starts before frontend
+    volumes:
+      - ./frontend:/app # Mount for development, optional for production
+
+networks:
+  app-network:
+    driver: bridge
