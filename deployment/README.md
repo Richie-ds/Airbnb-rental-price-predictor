@@ -9,12 +9,6 @@ This repository contains the deployment files for an Airbnb rental price predict
 - `frontend/`: Contains the Streamlit application and Dockerfile for the user interface.
 - `docker-compose.yml`: Orchestrates the backend and frontend services using Docker.
 
-## GitHub Repository
-
-This project is hosted on GitHub:
-
-[**Visit GitHub Repository**](https://github.com/Richie-ds/Airbnb-rental-price-predictor.git)
-
 ## Deployment Status
 
 Your Streamlit application is deployed and accessible via GitHub Codespaces. Click the link below to view the app:
