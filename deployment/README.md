@@ -8,9 +8,3 @@ This repository contains the deployment files for an Airbnb rental price predict
 - `backend/`: Contains the Flask application, model, and Dockerfile for the prediction service.
 - `frontend/`: Contains the Streamlit application and Dockerfile for the user interface.
 - `docker-compose.yml`: Orchestrates the backend and frontend services using Docker.
-
-## Deployment Status
-
-Your Streamlit application is deployed and accessible via GitHub Codespaces. Click the link below to view the app:
-
-[**View Streamlit App**](https://orange-space-spork-qjrg595x5qpc9x5j-8501.app.github.dev/)
